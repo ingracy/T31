@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <script>
+        //leitura
+        class Calculadora {
+            somar() {
+                var n1 = num1.value;
+                var n2 = num2.value;
+
+                //calculo
+                var soma = parseFloat(n1) + parseFloat(n2);
+
+                //soma
+                alert(soma);
+            }
+            subtrair() {
+                var n1 = num1.value;
+                var n2 = num2.value;
+
+                var sub = n1 - n2;
+
+                alert(sub);
+            }
+            multiplicar() {
+                var n1 = num1.value;
+                var n2 = num2.value;
+
+                var mult = n1 * n2;
+
+                alert(mult);
+            }
+            dividir() {
+                var n1 = num1.value;
+                var n2 = num2.value;
+
+                if (n2 != 0) {
+                    var div = n1 / n2;
+                    alert(div);
+                }
+                else {
+                    alert("Digite um numero diferente de 0")
+                }
+
+            }
+        }
+        var calc = new Calculadora();
+
+    </script>
+</head>
+
+<body>
+    <h1> Calculadora da Diva </h1>
+    <input id="num1" type="number" placeholder="Numero 1">
+    <input id="num2" type="number" placeholder="Numero 2">
+    <button onclick="calc.somar()">Somar</button>
+    <button onclick="calc.subtrair()">Subtrair</button>
+    <button onclick="calc.multiplicar()">Multiplicar</button>
+    <button onclick="calc.dividir()">Dividir</button>
+</body>
+
+</html>
