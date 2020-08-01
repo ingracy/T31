@@ -1,10 +1,11 @@
 ```mermaid
-class Diagram
+classDiagram
 class Calculadora{
 
     +somar()
     +multiplicar()
     +dividir()
     +subtrair()
+
 }
 ```
